@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "990030244355",
+    "project_id": "devtips-rn",
+    "storage_bucket": "devtips-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990030244355:android:578b56c07fcf00b9733c36",
+        "android_client_info": {
+          "package_name": "com.bodiavaleur.devtips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990030244355-dad5sg176eu80or319ge807tcvokc958.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfHcdW9LK24azWXH9K1OkbHuqiSRJi-Cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990030244355-dad5sg176eu80or319ge807tcvokc958.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "990030244355-doso8jund37dd8ppgckquru8n4f6t3m7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.devtips"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,10 +1,15 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {ImageBackground, Text, View} from 'react-native';
 
 export function SignIn() {
   return (
-    <View>
-      <Text>sign in</Text>
+    <View style={{flex: 1}}>
+      <ImageBackground
+        source={require('../../../assets/auth-bg.png')}
+        resizeMode="cover"
+        style={{width: '100%', height: '100%', position: 'absolute'}}
+      />
+      <Text>sign in qwe</Text>
     </View>
   );
 }
