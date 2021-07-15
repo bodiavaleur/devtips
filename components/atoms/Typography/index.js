@@ -12,9 +12,19 @@ export function Title({children, size, margin, ...rest}) {
   );
 }
 
-export function Text({children, size, lowOpacity, margin, ...rest}) {
+export function Text({
+  children,
+  size,
+  lowOpacity,
+  margin,
+  error,
+  link,
+  ...rest
+}) {
   return (
-    <NativeText style={styles.text({size, lowOpacity, margin})} {...rest}>
+    <NativeText
+      style={styles.text({size, lowOpacity, margin, error, link})}
+      {...rest}>
       {children}
     </NativeText>
   );
@@ -22,10 +32,10 @@ export function Text({children, size, lowOpacity, margin, ...rest}) {
 
 Title.propTypes = {
   size: PropTypes.number,
-  margin: PropTypes.oneOf(['small', 'normal', 'large']),
+  margin: PropTypes.oneOf(['xs', 'small', 'normal', 'large']),
 };
 
 Text.propTypes = {
   size: PropTypes.number,
-  margin: PropTypes.oneOf(['small', 'normal', 'large']),
+  margin: PropTypes.oneOf(['xs', 'small', 'normal', 'large']),
 };

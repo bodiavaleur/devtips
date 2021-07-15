@@ -8,6 +8,9 @@ export function adjustMargins(margin) {
   let multiplyMargin = 0;
 
   switch (margin) {
+    case 'xs':
+      multiplyMargin = 0.25;
+      break;
     case 'small':
       multiplyMargin = 0.5;
       break;
@@ -22,4 +25,8 @@ export function adjustMargins(margin) {
   }
 
   return REM_VALUE * multiplyMargin;
+}
+
+export function optionalStyle(prop, style) {
+  return prop ? style : {};
 }

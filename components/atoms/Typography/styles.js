@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {REM_VALUE, Theme} from '../../../theme';
-import {adjustMargins, adjustSize} from './helpers';
+import {adjustMargins, adjustSize, optionalStyle} from './helpers';
 
 const titleDefaults = {
   fontFamily: 'Quicksand',
@@ -15,17 +15,22 @@ const textDefaults = {
   color: Theme.colors.text,
 };
 
+const textError = isError => optionalStyle(isError, {color: Theme.colors.red});
+const textLink = isLink => optionalStyle(isLink, {color: Theme.colors.primary});
+
 const styles = StyleSheet.create({
   title: ({size, margin}) => ({
     ...titleDefaults,
     fontSize: adjustSize(size, titleDefaults.fontSize),
     marginVertical: adjustMargins(margin),
   }),
-  text: ({size, lowOpacity, margin}) => ({
+  text: ({size, lowOpacity, margin, error, link}) => ({
     ...textDefaults,
     fontSize: adjustSize(size, textDefaults.fontSize),
     marginVertical: adjustMargins(margin),
     opacity: lowOpacity ? 0.5 : 1,
+    ...textError(error),
+    ...textError(link),
   }),
 });
 
