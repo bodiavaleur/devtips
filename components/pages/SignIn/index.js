@@ -8,6 +8,7 @@ import {useFormik} from 'formik';
 import {initialValues, validationSchema} from './config';
 import Input from '../../atoms/Input';
 import {Title} from '../../atoms/Typography';
+import {Auth} from '../../../api/firebase/Auth';
 export function SignIn() {
   const formik = useFormik({
     initialValues,
@@ -44,14 +45,14 @@ export function SignIn() {
             value={formik.values.password}
             error={formik.touched.password && formik.errors.password}
           />
-          <Button
-            title="Sign in"
-            marginY="normal"
-            onPress={formik.handleSubmit}
-          />
+          <Button title="Sign in" marginY="normal" />
         </View>
         <View>
-          <Button title="Sign in with Google" icon={GoogleIcon} />
+          <Button
+            title="Sign in with Google"
+            icon={GoogleIcon}
+            onPress={Auth.signInWithGoogle}
+          />
         </View>
         <View></View>
       </SafeAreaView>

@@ -20,6 +20,33 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.bodiavaleur.devtips</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.990030244355-liv90ldao6fievo5phuep7i7hs34gubc</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.bodiavaleur.devtips</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>990030244355-liv90ldao6fievo5phuep7i7hs34gubc.apps.googleusercontent.com</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>

@@ -16,7 +16,7 @@
 		489F3BA8F4724800BC247388 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D30C262025240C28B800071 /* Quicksand-SemiBold.ttf */; };
 		51A2C242355846BAACCA6405 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD37006F28754E23BA90D37A /* Quicksand-Regular.ttf */; };
 		63C38890C70042EE8ED82171 /* PTSansNarrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 884BF4D14C144CC89EC8B6F1 /* PTSansNarrow-Bold.ttf */; };
-		78F9BCF7269B24AC005816CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78F9BCF6269B24AC005816CE /* GoogleService-Info.plist */; };
+		78FFEB0626A0B4C500579ADB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78FFEB0526A0B4C500579ADB /* GoogleService-Info.plist */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		90CCB793CD5D42A3B513B6EE /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8ADDECF291442293B28455 /* Quicksand-Medium.ttf */; };
 		A02DB0B19E354FA8BF316F4D /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6BC37D6C28A46AD9EEDA5B9 /* Quicksand-Light.ttf */; };
@@ -51,7 +51,7 @@
 		6D30C262025240C28B800071 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-SemiBold.ttf"; path = "../assets/fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		6F6716EC92B008534156446A /* libPods-devtips-devtipsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-devtips-devtipsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DE1EA95FBA2073049CE8E4 /* Pods-devtips-devtipsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devtips-devtipsTests.release.xcconfig"; path = "Target Support Files/Pods-devtips-devtipsTests/Pods-devtips-devtipsTests.release.xcconfig"; sourceTree = "<group>"; };
-		78F9BCF6269B24AC005816CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78FFEB0526A0B4C500579ADB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = devtips/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		884BF4D14C144CC89EC8B6F1 /* PTSansNarrow-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PTSansNarrow-Bold.ttf"; path = "../assets/fonts/PTSansNarrow-Bold.ttf"; sourceTree = "<group>"; };
 		8AC372BFA1D735088078CB88 /* Pods-devtips-devtipsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devtips-devtipsTests.debug.xcconfig"; path = "Target Support Files/Pods-devtips-devtipsTests/Pods-devtips-devtipsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		13B07FAE1A68108700A75B9A /* devtips */ = {
 			isa = PBXGroup;
 			children = (
-				78F9BCF6269B24AC005816CE /* GoogleService-Info.plist */,
+				78FFEB0526A0B4C500579ADB /* GoogleService-Info.plist */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -282,7 +282,7 @@
 				20CF063A03F9494D91E8F1D3 /* Quicksand-Bold.ttf in Resources */,
 				A02DB0B19E354FA8BF316F4D /* Quicksand-Light.ttf in Resources */,
 				90CCB793CD5D42A3B513B6EE /* Quicksand-Medium.ttf in Resources */,
-				78F9BCF7269B24AC005816CE /* GoogleService-Info.plist in Resources */,
+				78FFEB0626A0B4C500579ADB /* GoogleService-Info.plist in Resources */,
 				51A2C242355846BAACCA6405 /* Quicksand-Regular.ttf in Resources */,
 				489F3BA8F4724800BC247388 /* Quicksand-SemiBold.ttf in Resources */,
 			);
