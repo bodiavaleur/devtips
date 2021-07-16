@@ -1,15 +1,19 @@
 import React from 'react';
 import {ImageBackground, SafeAreaView, TextInput, View} from 'react-native';
 import styles from './styles';
-import Button from '../../atoms/Button';
-import GoogleIcon from '../../../assets/google-icon.svg';
-import DevtipsLogo from '../../../assets/devtips-logo.svg';
+import Button from '../../../atoms/Button';
+import GoogleIcon from '../../../../assets/google-icon.svg';
+import DevtipsLogo from '../../../../assets/devtips-logo.svg';
 import {useFormik} from 'formik';
 import {initialValues, validationSchema} from './config';
-import Input from '../../atoms/Input';
-import {Title} from '../../atoms/Typography';
-import {Auth} from '../../../api/firebase/Auth';
+import Input from '../../../atoms/Input';
+import {Title} from '../../../atoms/Typography';
+import {Auth} from '../../../../api/firebase/Auth';
+import {useDispatch} from 'react-redux';
+import {signIn} from '../../../../redux/slices/auth';
 export function SignIn() {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues,
     validationSchema,
@@ -19,7 +23,7 @@ export function SignIn() {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../../../assets/auth-bg.png')}
+        source={require('../../../../assets/auth-bg.png')}
         resizeMode="cover"
         style={{width: '100%', height: '100%', position: 'absolute'}}
       />
@@ -51,7 +55,9 @@ export function SignIn() {
           <Button
             title="Sign in with Google"
             icon={GoogleIcon}
-            onPress={Auth.signInWithGoogle}
+            onPress={() =>
+              Auth.signInWithGoogle().then(r => dispatch(signIn(r)))
+            }
           />
         </View>
         <View></View>
