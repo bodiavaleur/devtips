@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import Welcome from '../components/pages/Welcome';
-import {routes} from './routes';
+import Welcome from '../../components/pages/Welcome';
+import {routes} from '../routes';
 
 const {WELCOME_NAVIGATION} = routes;
 

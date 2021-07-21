@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     marginVertical: adjustMargins(margin),
     opacity: lowOpacity ? 0.5 : 1,
     ...textError(error),
-    ...textError(link),
+    ...textLink(link),
   }),
 });
 

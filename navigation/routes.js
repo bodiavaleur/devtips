@@ -13,3 +13,7 @@ export const routes = {
     ALL_TIPS: 'AllTips',
   },
 };
+
+export const routeLabels = {
+  [routes.TIPS_NAVIGATION.ALL_TIPS]: 'Tips',
+};

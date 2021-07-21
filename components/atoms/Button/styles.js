@@ -1,18 +1,15 @@
 import {StyleSheet} from 'react-native';
 import {REM_VALUE, Theme} from '../../../theme';
-import {adjustMargins} from '../Typography/helpers';
+import {adjustMargins, selectVariant} from '../Typography/helpers';
 
 const styles = StyleSheet.create({
-  button: ({marginX, marginY}) => ({
+  button: ({marginX, marginY, variant}) => ({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: adjustMargins(marginX),
     marginVertical: adjustMargins(marginY),
-    paddingVertical: 16,
-    paddingHorizontal: 32,
-    borderRadius: 32,
-    backgroundColor: Theme.colors.primary,
+    ...selectVariant(variant),
   }),
   buttonText: {
     fontFamily: 'Quicksand',
@@ -21,7 +18,7 @@ const styles = StyleSheet.create({
     color: Theme.colors.text,
   },
   buttonIcon: {
-    marginRight: 8,
+    marginRight: REM_VALUE * 0.5,
   },
 });
 

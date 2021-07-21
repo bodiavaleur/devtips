@@ -1,14 +1,14 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import SignIn from '../components/pages/Auth/SignIn';
-import SignUp from '../components/pages/Auth/SignUp';
-import {routes} from './routes';
+import SignIn from '../../components/pages/Auth/SignIn';
+import SignUp from '../../components/pages/Auth/SignUp';
+import {routes} from '../routes';
 
 const {AUTH_NAVIGATION} = routes;
 
 const Stack = createStackNavigator();
 
-export function AuthNavigation() {
+function AuthNavigation() {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name={AUTH_NAVIGATION.SIGN_IN} component={SignIn} />
@@ -16,7 +16,5 @@ export function AuthNavigation() {
     </Stack.Navigator>
   );
 }
-
-AuthNavigation.propTypes = {};
 
 export default AuthNavigation;

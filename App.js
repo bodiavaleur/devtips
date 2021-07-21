@@ -1,6 +1,6 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
-import RootNavigation from './navigation/RootNavigation';
+import RootNavigation from './navigation';
 import {Provider} from 'react-redux';
 import {store} from './redux';
 function App() {
