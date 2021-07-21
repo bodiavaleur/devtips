@@ -7,11 +7,9 @@ import DevtipsLogo from '../../../../assets/devtips-logo.svg';
 import {useFormik} from 'formik';
 import {initialValues, validationSchema} from './config';
 import Input from '../../../atoms/Input';
-import {Title} from '../../../atoms/Typography';
-import {Auth} from '../../../../api/firebase/Auth';
 import {useDispatch} from 'react-redux';
-import {signIn} from '../../../../redux/slices/auth';
-export function SignIn() {
+import {SIGN_IN} from '../../../../redux/actions/auth';
+function SignIn() {
   const dispatch = useDispatch();
 
   const formik = useFormik({
@@ -55,9 +53,7 @@ export function SignIn() {
           <Button
             title="Sign in with Google"
             icon={GoogleIcon}
-            onPress={() =>
-              Auth.signInWithGoogle().then(r => dispatch(signIn(r)))
-            }
+            onPress={() => dispatch(SIGN_IN())}
           />
         </View>
         <View></View>

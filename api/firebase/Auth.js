@@ -17,6 +17,7 @@ class AuthAPI {
       return auth().currentUser;
     } catch (err) {
       console.log(err);
+      return null;
     }
   }
 }

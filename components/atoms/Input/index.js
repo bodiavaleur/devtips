@@ -4,7 +4,7 @@ import styles from './styles';
 import {Theme} from '../../../theme';
 import {Text} from '../Typography';
 
-export function Input({marginX, marginY, error, helperText, ...rest}) {
+function Input({marginX, marginY, error, helperText, ...rest}) {
   return (
     <View style={styles.inputContainer({marginX, marginY})}>
       <TextInput

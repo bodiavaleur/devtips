@@ -5,6 +5,7 @@ import {
   SIGN_OUT,
   SIGN_UP,
   SIGN_UP_ERROR,
+  SET_SIGNED_IN_USER,
 } from '../actions/auth';
 
 const initialState = {
@@ -15,18 +16,8 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    [SIGN_IN]: (state, {payload}) => {
-      state.user = {
-        displayName: payload.displayName,
-        email: payload.email,
-        photoURL: payload.metadata?.photoURL,
-      };
-    },
-    [SIGN_UP]: (state, payload) => {
-      console.log(state, payload);
-    },
-    [SIGN_OUT]: (state, payload) => {
-      console.log(state, payload);
+    [SET_SIGNED_IN_USER]: (state, {payload}) => {
+      state.user = payload;
     },
     [SIGN_IN_ERROR]: (state, payload) => {
       console.log(state, payload);
@@ -41,10 +32,9 @@ export const {
   [SIGN_IN]: signIn,
   [SIGN_UP]: signUp,
   [SIGN_OUT]: signOut,
+  [SET_SIGNED_IN_USER]: setSignedInUser,
   [SIGN_IN_ERROR]: signInError,
   [SIGN_UP_ERROR]: signUpError,
 } = authSlice.actions;
-
-console.log(authSlice);
 
 export const {name: authName, reducer: authReducer} = authSlice;

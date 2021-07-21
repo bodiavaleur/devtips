@@ -4,7 +4,7 @@ import {TouchableOpacity} from 'react-native';
 import {Text} from '../Typography';
 import {useNavigation} from '@react-navigation/native';
 
-export function Link({children, to}) {
+function Link({children, to}) {
   const navigation = useNavigation();
 
   const onNavigateTo = () => navigation.navigate(to);
